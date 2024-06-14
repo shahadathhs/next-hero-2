@@ -1,3 +1,20 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "extends": ["next/core-web-vitals", "eslint:recommended", "plugin:react/recommended"],
+  "plugins": ["react"],
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off", 
+    "no-unused-vars": "warn",
+    "semi": "off",  // Disable semicolon rule
+    "quotes": "off" // Disable quotes rule
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }
